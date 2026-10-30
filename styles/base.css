@@ -1,4 +1,4 @@
-main, footer, nav, h1 {
+nav, h1 {
     font-family: "Comfortaa", sans-serif;
 }
 
@@ -12,8 +12,6 @@ body p, h2, h3 {
 /*--------------------------------------------------------------------------------------------------------------------*/
 header {
     font-family: "Comfortaa", sans-serif;
-    padding: 20px;
-    
 }
 
 /*--------------------------------------------------------------------*/
@@ -28,43 +26,51 @@ header {
 
 #course-title {
     color: white;
+    font-size: 1.5em;
 }
 
 
 /*--------------------------------------------------------------------*/
 /*-----------------------HEADER - LOWER-------------------------------*/
+
 #nav-container {
     width: 100%;
     text-align: center;
     background-color: #333333;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
-/*------Larger Views------------------------------*/
-@media (min-width: 640px) {
-    nav ul{
-        display: flex;
-        justify-content: space-evenly;
-    }
+/* Remove default spacing */
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
 
+/* Larger Views */
+@media (min-width: 640px) {
+    header nav ul {
+        display: flex;
+    }
 }
 
 header nav li {
     list-style: none;
+    flex: 1;
 }
 
-header nav a{
+header nav a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 20px 10px;
 }
 
-header nav a:hover {
+/* Hover effect */
+header nav li:hover {
     background-color: yellow;
+}
+
+header nav li:hover a {
     color: black;
-    border-radius: 5px;
 }
 
 
@@ -74,6 +80,9 @@ header nav a:hover {
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------MAIN SECTION---------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------*/
+main {
+    font-family: "Comfortaa", sans-serif;
+}
 
 img {
     width: 200px;
@@ -90,8 +99,10 @@ img {
 /*-----------------------------------------------FOOTER SECTION-------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 footer {
+    font-family: "Comfortaa", sans-serif;
     background-color: #1d4d72;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
