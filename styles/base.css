@@ -1,7 +1,7 @@
-header, nav, h1, footer {
-    font-family: Comfortaa, sans-serif;
+header, main, nav, h1, footer {
+    font-family: "Comfortaa", sans-serif;
 }
 
 body p, h2, h3 {
-    font-family: Calibri, sans-serif;
+    font-family: "Calibri", sans-serif;
 }
