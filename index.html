@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Long Kim Chau</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals">
+    <meta name="author" content="Long Kim Chau">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------HEADER SECTION-------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/long-chau-104b15412/">LinkedIn</a> |
+            <a href="https://byupw.instructure.com/">Canvas</a> |
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/2-tim/4?lang=eng&id=p7#p7">Scripture</a> |
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------MAIN SECTION---------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <main>
+        <h1>Long Kim Chau</h1>
+        <!-----------------------  MAIN - LEFT ---------------------->
+        <section class="card">
+            <h2>About me</h2>
+            <p>Hello everyone. My name is Long Kim Chau, and I am from Vietnam. Something interesting about me
+                is that I enjoy math, reasoning, and solving problems step by step. That is one reason I chose
+                Software Development as my major. I also enjoy swimming, investing, and learning how technology can
+                improve people’s lives.
+            </p>
+            <img src="images/profile.jpg" alt="Long Kim Chau">
+
+            <h3>Ho Chi Minh City, Vietnam</h3>
+            <img src="images/vietnam.jpg" alt="Vietnam">
+            <p>Vietnam is a vibrant S-shaped nation in Southeast Asia known for its breathtaking natural
+                landscapes, ranging from the misty mountains of Sapa to the emerald waters of Ha Long Bay. The
+                country boasts a rich, resilient history and a diverse cultural heritage deeply influenced by
+                centuries of ancestral traditions. Today, it stands as a rapidly growing economic hub where
+                bustling, motorbike-filled modern cities coexist beautifully with tranquil, timeless rural villages.
+            </p>
+        </section>
+
+        <!------------------------  MAIN - RIGHT ----------------------->
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="#">Dev to Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS TRicks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+
+
+
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------FOOTER SECTION-------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <footer>
+        <p>
+            ©<span id="currentyear"></span>
+            <span>Long Kim Chau</span>
+            <span>Vietnam</span>
+        </p>
+        <p id ="lastModified"></p>
+    </footer>
 </body>
+
 </html>
