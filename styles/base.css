@@ -1,11 +1,8 @@
-nav, h1 {
-    font-family: "Comfortaa", sans-serif;
-}
 
-body p, h2, h3 {
-    font-family: "Calibri", sans-serif;
+body {
+    margin: 0;
+    padding: 0;
 }
-
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------HEADER SECTION-------------------------------------------------------*/
@@ -80,17 +77,73 @@ header nav li:hover a {
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------MAIN SECTION---------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------*/
+
+/* Default and Mobile View */
 main {
     font-family: "Comfortaa", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    box-sizing: border-box;
 }
 
-img {
+/* Desktop View */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+}
+
+/* General Headings */
+main h1 {
+    text-align: center;
+}
+
+/* Card Design */
+.card {
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Card Headings */
+.card h2 {
+    text-align: center;
+    background-color: #1d4d72;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 15px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+/* Card Text */
+.card p {
+    margin: 16px;
+    line-height: 1.6;
+}
+
+/* Card Images */
+.card img {
     width: 200px;
     height: auto;
 }
 
-
-
+/* Card Resource List */
+.card ul {
+    padding: 20px 20px 20px 45px;
+    line-height: 1.8;
+}
 
 
 
