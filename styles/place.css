@@ -1,12 +1,23 @@
 /* ----------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------- GENERAL ---------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+:root {
+    --primary-color: #d21034;
+    --secondary-color: #007849;
+    --text-color: #222222;
+    --light-color: #ffffff;
+    --card-background: #ffffffd9;
+    --heading-background: #007849e6;
+}
+
+
 body {
     margin: 0;
 }
 
 main {
-    background-color: #007849;
+    background-color: var(--secondary-color);
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -14,8 +25,8 @@ main {
 /*---------------------------------------------------------------------------------------------------------------------------------------------- */
 header {
     font-family: "Comfortaa", sans-serif;
-    background-color: #d21034;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--light-color);
     text-align: center;
     padding: 12px 16px;
 }
@@ -48,9 +59,9 @@ header {
 
 /* Data and Weather - Mobile */
 #main-content {
-    background-color: white;
+    background-color: var(--light-color);
     font-family: "Comfortaa", sans-serif;
-    color: #222222;
+    color: var(--text-color);
 }
 
 /* Data and Weather Sections */
@@ -98,8 +109,8 @@ header {
 
 footer {
     font-family: "Comfortaa", sans-serif;
-    background-color: #d21034;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--light-color);
     text-align: center;
     padding: 12px 16px;
 }

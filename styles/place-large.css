@@ -37,7 +37,7 @@
     /* Both Information Cards */
     #main-content-data-section,
     #main-content-weather-section {
-        background-color: rgba(255, 255, 255, 0.85);
+        background-color: var(--card-background);
         box-sizing: border-box;
         padding: 0 0 16px;
         border: none;
@@ -60,8 +60,8 @@
 
     /* Card Headings */
     #main-content h2 {
-        background-color: rgba(0, 120, 73, 0.9);
-        color: white;
+        background-color: var(--heading-background);
+        color: var(--light-color);
         text-align: left;
         padding: 12px;
         margin: 0 0 12px;
