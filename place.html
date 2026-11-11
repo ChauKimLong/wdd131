@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Long Kim Chau</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Coded by an handsome guy namedLong Kim Chau">
+    <meta name="author" content="Long Kim Chau">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------HEADER SECTION-------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <header>
+        <h1>Vietnam</h1>
+    </header>
+
+
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------MAIN SECTION---------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <main>
+        <!-- Green spacing -->
+        <div id="main-space"></div>
+
+        <!-- Layer 2: Hero Image -->
+        <picture id="hero-image">
+            <source media="(max-width: 767px)" srcset="images/place-main-mobile-view.jpg" width="600" height="900">
+            <img src="images/place-main-desktop-view.jpg" alt="Beautiful landscape of Vietnam" width="1600" height="700">
+        </picture>
+
+        <!-- Layer 3: Data and Weather -->
+        <div id="main-content">
+            <div id="main-content-data-section">
+                <h2>Data</h2>
+                <ul>
+                    <li>Area: 331,344 km²</li>
+                    <li>Population: 102,177,431</li>
+                    <li>Capital: Hanoi</li>
+                    <li>Language: Vietnamese</li>
+                    <li>Currency: Vietnamese đồng (VND)</li>
+                    <li>Time zone: UTC+7</li>
+                    <li>Calling code: +84</li>
+                    <li>Internet TLD: .vn</li>
+                </ul>
+            </div>
+            <div id="main-content-weather-section">
+                <h2>Weather</h2>
+                <img src="images/icon-weather.svg" alt="Weather Icon">
+                <ul>
+                    <li>Temperature: 10°C</li>
+                    <li>Condition: Partly Cloudy</li>
+                    <li>Wind: 5 km/h</li>
+                    <li>Wind Chill: <span id="wind-chill"></span></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------FOOTER SECTION-------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <footer>
+        <p>
+            <span>©</span><span id="currentyear"></span>
+            <span> 🌸 </span>
+            <span>Long Kim Chau</span>
+            <span> 🌸 </span>
+            <span>Vietnam</span>
+        </p>
+        <p><span id="lastModifiedLabel">Last Modification:</span> <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

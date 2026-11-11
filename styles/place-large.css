@@ -1,0 +1,92 @@
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------- HEADER SECTION - LARGE VIEW -------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------- MAIN - LARGE VIEW ----------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+
+    /* Main becomes the positioning reference */
+    main {
+        position: relative;
+    }
+
+    /* Data and Weather Overlay */
+    #main-content {
+        position: absolute;
+        top: 28px;
+        left: 2%;
+        right: 2%;
+        bottom: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        background-color: transparent;
+    }
+
+    /* Both Information Cards */
+    #main-content-data-section,
+    #main-content-weather-section {
+        background-color: rgba(255, 255, 255, 0.85);
+        box-sizing: border-box;
+        padding: 0 0 16px;
+        border: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Data - Top Left */
+    #main-content-data-section {
+        align-self: flex-start;
+        width: 275px;
+        max-width: 48%;
+    }
+
+    /* Weather - Bottom Right */
+    #main-content-weather-section {
+        align-self: flex-end;
+        width: 215px;
+        max-width: 48%;
+    }
+
+    /* Card Headings */
+    #main-content h2 {
+        background-color: rgba(0, 120, 73, 0.9);
+        color: white;
+        text-align: left;
+        padding: 12px;
+        margin: 0 0 12px;
+    }
+
+    /* Information Text */
+    #main-content ul {
+        font-size: 0.8rem;
+        line-height: 1.6;
+        padding: 0 12px;
+    }
+
+    /* Hide SVG Weather Icon on Desktop */
+    #main-content-weather-section img {
+        display: none;
+    }
+
+    /* Weather Emoji - Desktop View */
+    #main-content-weather-section h2::after {
+        content: "⛅";
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 1.5rem;
+        vertical-align: middle;
+    }
+
+}
+
