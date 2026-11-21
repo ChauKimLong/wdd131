@@ -1,0 +1,17 @@
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------ GENERAL - LARGE VIEW ----------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+/* Shared desktop responsive rules */
+@media (min-width: 700px) {
+    .container { width: min(100% - 72px, 1120px); }
+    .section-space { padding-block: 86px; }
+    .header-inner { min-height: 92px; padding-block: 11px; flex-wrap: nowrap; }
+    .menu-button { display: none; }
+    .primary-navigation, .primary-navigation.is-open { display: flex; justify-content: flex-end; gap: 6px; align-items: center; order: initial; width: auto; padding: 0; border: 0; }
+    .primary-navigation a { padding: 11px 14px; min-height: 42px; }
+    .page-banner-inner { padding-block: 85px 88px; }
+    .footer-grid { grid-template-columns: 1.5fr 1fr; }
+    .footer-links { grid-template-columns: repeat(3, 1fr); }
+    .note-panel { grid-template-columns: 1fr 1.2fr; padding: 38px; align-items: center; }
+}

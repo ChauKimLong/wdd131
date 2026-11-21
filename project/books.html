@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore six influential investment books, filter by topic, and save books to read later.">
+    <meta name="author" content="Long Kim Chau">
+    <meta name="theme-color" content="#2F5D3A">
+    <title>Books | Investment Learning Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/books.css">
+    <link rel="stylesheet" href="styles/common-large.css">
+    <link rel="stylesheet" href="styles/books-large.css">
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/books.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/investment-logo.webp">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------HEADER SECTION-------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <header class="site-header">
+        <div class="header-inner container">
+            <a class="brand" href="index.html" aria-label="Investment Learning Hub, Home">
+                <img src="images/investment-logo.webp" alt="" width="54" height="54">
+                <span><strong>Investment</strong><small>Learning Hub</small></span>
+            </a>
+            <button class="menu-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+            <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
+                <a class="nav-home" href="index.html">Home</a>
+                <a class="nav-books" aria-current="page" href="books.html">Books</a>
+                <a class="nav-knowledge" href="knowledge.html">Knowledge</a>
+                <a class="nav-news" href="https://www.reuters.com/markets/" target="_blank">News <span class="external-mark" aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------MAIN SECTION---------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <main id="main-content">
+    <section class="page-banner page-banner-books">
+        <div class="container page-banner-inner">
+            <p class="eyebrow eyebrow-light">THE READING ROOM</p>
+            <h1>Investment books, thoughtfully chosen.</h1>
+            <p>Explore different perspectives—from index investing and business value to disciplined stock analysis. Choose the ideas that fit your learning goals.</p>
+        </div>
+    </section>
+    <section class="container section-space" aria-labelledby="collection-heading">
+        <div class="section-heading">
+            <p class="eyebrow">BOOK SHELF</p>
+            <h2 id="collection-heading">Browse the collection</h2>
+            <p>These are real published books. Please explore the collection to find the ones that interest you.</p>
+        </div>
+        <div class="catalog-tools">
+            <div class="control-field">
+                <label for="book-search">Search title or author</label>
+                <input id="book-search" type="search" placeholder="Try Graham, Lynch, risk…" autocomplete="off">
+            </div>
+            <div class="control-field">
+                <label for="book-category">Explore by topic</label>
+                <select id="book-category" name="category">
+                    <option value="all">All topics</option>
+                    <option value="foundations">Investing foundations</option>
+                    <option value="value">Value & business</option>
+                    <option value="growth">Growth & trading</option>
+                </select>
+            </div>
+            <label class="saved-only"><input id="saved-only" type="checkbox"> Show my saved books</label>
+        </div>
+        <div class="catalog-summary">
+            <p id="book-count" role="status" aria-live="polite">Loading books…</p>
+            <button class="simple-button" id="clear-filters" type="button">Clear filters</button>
+        </div>
+        <div id="book-grid" class="book-grid" aria-label="Investment book collection"></div>
+        <p id="book-empty" class="empty-state" hidden>No books match your filters. Try a different search or clear the filters.</p>
+    </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------FOOTER SECTION-------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <p class="footer-brand">Investment Learning Hub</p>
+                <p>Learn the principles. Understand the risks. Make informed decisions.</p>
+                <p class="disclaimer">Educational content for project WDD131 only</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="books.html">Books</a>
+                <a href="knowledge.html">Knowledge</a>
+                <a href="https://www.reuters.com/markets/" target="_blank">News</a>
+                <a href="references.html">References</a>
+                <a href="siteplan.html">Site plan</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© <span id="currentyear">2026</span> 🌸 Long Kim Chau 🌸 Vietnam</p>
+            <p>Last Modification: <span id="lastModified">—</span></p>
+        </div>
+    </footer>
+</body>
+</html>

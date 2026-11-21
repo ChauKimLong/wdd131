@@ -1,0 +1,140 @@
+/* -----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------- HEADER SECTION - MOBILE VIEW -------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------- MAIN - MOBILE VIEW ---------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+.page-banner-books { 
+    background: radial-gradient(circle at 90% 10%, #406E4B, transparent 35%), 
+    var(--primary-deep); 
+}
+.catalog-tools { 
+    background: var(--white-color); 
+    border: 1px solid var(--line-color); 
+    border-radius: 11px; 
+    padding: 18px; 
+    display: grid; 
+    gap: 16px; 
+    align-items: end; 
+}
+.saved-only { 
+    display: flex; 
+    align-items: center; 
+    gap: 9px; 
+    font-size: .73rem; 
+    font-weight: 700; 
+    min-height: 45px; 
+}
+.catalog-summary { 
+    margin-block: 19px 15px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 12px; 
+}
+.catalog-summary p { 
+    color: var(--muted-color); 
+    font-size: .76rem; 
+    margin: 0; 
+}
+.book-grid { 
+    display: grid; 
+    gap: 19px; 
+}
+.book-card { 
+    border: 1px solid var(--line-color); 
+    background: var(--white-color); 
+    border-radius: 12px; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
+}
+.book-cover { 
+    background: #D7E2D2; 
+    padding: 22px 28px; 
+}
+.book-cover img { 
+    margin: auto; 
+    width: 100%; 
+    max-width: 220px; 
+    height: auto; 
+    aspect-ratio: 420 / 600; 
+    object-fit: contain; 
+    box-shadow: 0 15px 21px #172C2340; 
+}
+.book-details { 
+    padding: 22px; 
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+}
+.book-tag { 
+    text-transform: uppercase; 
+    font-weight: 700; 
+    letter-spacing: .13em; 
+    font-size: .62rem; 
+    color: var(--primary-color); 
+}
+.book-details h3 { 
+    margin: 11px 0 7px; 
+}
+.book-author { 
+    font-size: .75rem; 
+    color: var(--muted-color); 
+}
+.book-description { 
+    font-size: .76rem; 
+    color: #47564C; 
+    flex: 1; 
+}
+.book-actions { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 9px; 
+    align-items: center; 
+    justify-content: flex-end; 
+    border-top: 1px solid var(--line-color); 
+    padding-top: 15px; 
+}
+.book-save { 
+    border: 1px solid #95B19B; 
+    border-radius: 5px; 
+    color: var(--primary-color); 
+    background: #F2F8F1; 
+    padding: 9px 11px; 
+    font-size: .69rem; 
+    font-weight: 700; 
+    cursor: pointer; 
+}
+.book-save[aria-pressed=true] { 
+    background: var(--primary-color); 
+    color: var(--white-color); 
+}
+.empty-state { 
+    padding: 32px; 
+    text-align: center; 
+    background: var(--soft-green); 
+    border-radius: 8px; 
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------- FOOTER SECTION - MOBILE VIEW ------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------- */

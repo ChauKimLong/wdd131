@@ -1,0 +1,99 @@
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------- HEADER SECTION - MOBILE VIEW ------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------- MAIN - MOBILE VIEW ---------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+.hero { 
+    background: linear-gradient(145deg,#1C452A 0%,#122E21 80%); 
+    color: var(--white-color); 
+    overflow: hidden; 
+}
+.hero-grid { 
+    display: grid; 
+    gap: 24px; 
+    padding-block: 62px 38px; 
+}
+.hero-copy h1 { 
+    margin: 0 0 22px; 
+    max-width: 690px; 
+
+}
+.hero-copy em { 
+    color: var(--accent-light); 
+    font-style: normal; 
+}
+.hero-lead { 
+    color: #DFE9E0; 
+    max-width: 575px; 
+    line-height: 1.9; 
+    font-size: .89rem; 
+}
+.hero-actions { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-top: 24px; 
+}
+.hero-art { 
+    margin: 0; 
+    border: 1px solid #FFFFFF26; 
+    overflow: hidden; 
+    border-radius: 12px; 
+    background: #254934; 
+}
+.hero-art img { 
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+.hero-art figcaption { 
+    font-size: .63rem; 
+    color: #D3E1D1; 
+    padding: 7px 13px 11px; 
+}
+
+
+.explore-section { 
+    background-color: #EAF0E8; 
+}
+.explore-grid { 
+    display: grid; 
+    gap: 18px; 
+}
+.explore-card { 
+    border-radius: 12px; 
+    overflow: hidden; 
+    background: var(--white-color); 
+    border: 1px solid #D1DECF; 
+}
+.explore-card img { 
+    width: 100%; 
+    aspect-ratio: 3 / 2; 
+    object-fit: cover; 
+}
+.explore-card-body { 
+    padding: 23px; 
+}
+.explore-card h3 { 
+    margin: 9px 0; 
+}
+.explore-card p { 
+    font-size: .78rem; 
+    color: var(--muted-color); 
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------- FOOTER SECTION - MOBILE VIEW ------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------- */
