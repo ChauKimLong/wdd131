@@ -1,0 +1,33 @@
+/* ----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------- MAIN - LARGE VIEW ----------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 700px) {
+    main {
+        padding: 30px 28px 60px;
+    }
+
+    main section {
+        margin-bottom: 35px;
+    }
+
+    .color-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .type-examples {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .page-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .wireframe-grid {
+        grid-template-columns: 280px minmax(0, 1fr);
+        align-items: start;
+    }
+
+    .wireframe-desktop .wf-nav {
+        font-size: 0.7rem;
+    }
+}

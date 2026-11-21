@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website planning document for Investment Learning Hub, a beginner-friendly investment education project for WDD 131.">
+    <meta name="author" content="Long Kim Chau">
+    <title>Investment Learning Hub | Website Planning Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <script src="scripts/siteplan.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------- HEADER SECTION ------------------------------------------------------------>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="site-logo">
+                <img src="images/investment-logo.webp" alt="investment logo">
+            </div>
+            <div>
+                <p class="header-eyebrow">WEBSITE PLANNING DOCUMENT · WDD 131</p>
+                <h1>Investment Learning Hub</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------- MAIN SECTION -------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <main>
+        <!-- 1. Site Name -->
+        <section aria-labelledby="site-name">
+            <h2 id="site-name">Site Name</h2>
+            <p><strong>Investment Learning Hub</strong> is a clear and welcoming name for a website about investment education. The word <em>Hub</em> suggests one place where beginners can find books, useful lessons, and financial news resources.</p>
+        </section>
+
+        <!-- 2. Site Purpose -->
+        <section aria-labelledby="site-purpose">
+            <h2 id="site-purpose">Site Purpose</h2>
+            <p>The purpose of this website is to help beginners understand the basics of investing. It will introduce important financial concepts, recommend helpful investment books with short descriptions, and provide a link to reliable financial news. The content will focus on education rather than personalized investment advice.</p>
+        </section>
+
+        <!-- 3. Scenarios -->
+        <section aria-labelledby="scenarios">
+            <h2 id="scenarios">Scenarios</h2>
+            <ul class="scenario-list">
+                <li>What should I learn before buying my first stock?</li>
+                <li>Which investment books are suitable for beginners?</li>
+                <li>Where can I find trustworthy financial market news?</li>
+            </ul>
+        </section>
+
+        <!-- 4. Color Schema -->
+        <section aria-labelledby="color-schema">
+            <h2 id="color-schema">Color Schema</h2>
+            <p>These colors provide a calm, readable design. Forest green represents growth and stability, while gold highlights important information.</p>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch color-green" aria-hidden="true"></div>
+                    <div class="color-details"><strong>#2F5D3A</strong><span>Forest Green · header, footer, section headings</span></div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch color-cream" aria-hidden="true"></div>
+                    <div class="color-details"><strong>#F7F4EC</strong><span>Cream · page background</span></div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch color-gold" aria-hidden="true"></div>
+                    <div class="color-details"><strong>#C99732</strong><span>Gold · accents, buttons, links</span></div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch color-charcoal" aria-hidden="true"></div>
+                    <div class="color-details"><strong>#202936</strong><span>Charcoal · body text</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Typography -->
+        <section aria-labelledby="typography">
+            <h2 id="typography">Typography</h2>
+            <div class="type-examples">
+                <div class="type-sample">
+                    <p class="type-label">Comfortaa · Headings and website name</p>
+                    <p class="heading-demo">Learn to Invest with Confidence</p>
+                </div>
+                <div class="type-sample">
+                    <p class="type-label">Arial · Paragraphs, lists, and practical information</p>
+                    <p class="body-demo">Investment knowledge starts with understanding risk, diversification, and long-term goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Planned Website Structure (extra project preparation) -->
+        <section aria-labelledby="site-structure">
+            <h2 id="site-structure">Planned Website Structure</h2>
+            <p>The final website will have three original pages and one external navigation link:</p>
+            <div class="page-grid">
+                <article class="page-card">
+                    <h3>Home</h3>
+                    <p>Introduce the website and guide visitors toward books and beginner lessons.</p>
+                </article>
+                <article class="page-card">
+                    <h3>Books</h3>
+                    <p>Display real investment books with cover images, authors, and short summaries.</p>
+                </article>
+                <article class="page-card">
+                    <h3>Knowledge</h3>
+                    <p>Explain basics such as stocks, bonds, and risk management, with a learning-preferences form.</p>
+                </article>
+                <article class="page-card">
+                    <h3>News</h3>
+                    <p>A navigation link to an established financial news website, rather than a fourth page.</p>
+                </article>
+            </div>
+            <p class="planning-note">Planned interactivity: filter book cards with JavaScript and remember a visitor's selected learning interest using localStorage.</p>
+        </section>
+
+        <!-- 7. Wireframes -->
+        <section aria-labelledby="wireframes">
+            <h2 id="wireframes">Wireframes — Home Page</h2>
+            <p>The following sketches show how the Home page content will be arranged on wide and narrow screens.</p>
+            <div class="wireframe-grid">
+                <figure class="wireframe-figure">
+                    <figcaption>Mobile View</figcaption>
+                    <div class="wireframe wireframe-mobile" aria-label="Mobile home page wireframe">
+                        <div class="wf-row wf-nav"><span>LOGO</span><span>☰</span></div>
+                        <div class="wf-hero"><strong>Website Introduction</strong><span>Headline + short description</span><span class="wf-button">Explore Knowledge</span></div>
+                        <div class="wf-section-label">Explore</div>
+                        <div class="wf-tile">Books</div>
+                        <div class="wf-tile">Knowledge</div>
+                        <div class="wf-tile">News (external link)</div>
+                        <div class="wf-footer">Footer</div>
+                    </div>
+                </figure>
+                <figure class="wireframe-figure">
+                    <figcaption>Desktop / Wide View</figcaption>
+                    <div class="wireframe wireframe-desktop" aria-label="Desktop home page wireframe">
+                        <div class="wf-row wf-nav"><span>LOGO</span><span>Home　 Books　 Knowledge　 News</span></div>
+                        <div class="wf-hero"><strong>Website Introduction</strong><span>Headline + short explanation of the site</span><span class="wf-button">Explore Knowledge</span></div>
+                        <div class="wf-section-label">Explore</div>
+                        <div class="wf-desktop-tiles">
+                            <div class="wf-tile">Books</div>
+                            <div class="wf-tile">Knowledge</div>
+                            <div class="wf-tile">News (external link)</div>
+                        </div>
+                        <div class="wf-footer">Footer</div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------- FOOTER SECTION ------------------------------------------------------------>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <footer>
+        <p>© <span id="currentyear"></span> 🌸 Long Kim Chau 🌸 Vietnam</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
