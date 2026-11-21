@@ -1,0 +1,257 @@
+/* ----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------- GENERAL ---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+:root {
+    --primary-color: #2b0029;
+    --form-background: #d6cfd6;
+    --input-background: #ffffff;
+    --text-color: #1e1e1e;
+    --border-color: #aaa4aa;
+    --optional-color: #39276c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 6px;
+    font-family: "Comfortaa", sans-serif;
+    color: var(--text-color);
+    background-color: var(--input-background);
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------- HEADER - MOBILE VIEW --------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--input-background);
+    padding: 16px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------- MAIN - MOBILE VIEW ---------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+main {
+    padding: 14px 0;
+}
+
+/* Form Container */
+form {
+    background-color: var(--form-background);
+    border-radius: 5px;
+    padding: 16px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Form Labels */
+.form-item > label,
+fieldset legend {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Optional Labels */
+.form-item label span {
+    color: var(--optional-color);
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+/* Dropdown, Date, Text, and Textarea */
+form select,
+form input[type="date"],
+form input[type="text"],
+form textarea {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px;
+
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    background-color: var(--input-background);
+    border: 1px solid var(--border-color);
+}
+
+/* Textarea */
+form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+/* Fieldsets */
+form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+/* Overall Rating */
+.rating-options {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 4px;
+    margin-top: 10px;
+}
+
+.rating-options label {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-size: 0.7rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.rating-options input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Useful Features */
+.features-group p {
+    margin: 0 0 12px;
+    font-size: 0.8rem;
+}
+
+.features-options {
+    display: grid;
+    gap: 8px;
+}
+
+.features-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.features-options input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    width: 100%;
+    min-height: 48px;
+    padding: 10px;
+
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    background-color: #eeeeee;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e3dae3;
+}
+
+form input[type="submit"]:focus-visible {
+    outline: 3px solid var(--optional-color);
+    outline-offset: 3px;
+}
+
+
+/* Review Confirmation Page */
+main.confirmation {
+    background-color: var(--form-background);
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 5px;
+    margin: 14px auto;
+}
+
+main.confirmation h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+main.confirmation p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+main.confirmation a {
+    color: var(--optional-color);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------- FOOTER SECTION ----------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--input-background);
+    text-align: center;
+    padding: 14px 12px;
+    font-size: 0.75rem;
+}
+
+footer p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
